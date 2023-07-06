@@ -30,7 +30,7 @@ app.use('/', express.static(path.join(__dirname, 'public')));
 
 app.use('/api/greeting', (request, response) => {
   const name = request.query ? request.query.name : undefined;
-  response.send({ content: `Hola, ${name || 'Mundo!'}` });
+  response.send({ content: `Que pasa, ${name || 'Mundo!'}` });
 });
 
 module.exports = app;
